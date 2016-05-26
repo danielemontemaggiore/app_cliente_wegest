@@ -1,0 +1,32 @@
+.main-content{
+	font-family: 'Neuton', sans-serif;
+line-height: 28px;
+font-weight: 400;
+font-style: normal;
+color: #777;
+}
+.b{
+	color: #5b5e5e;
+}
+.center{
+	text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+#logo-parruccheria{
+	font-size: 22px;
+	margin-top: 30px;
+}
+#nome-parruccheria{
+	font-size: 20px;
+	font-style: bold;
+}
+#subtitle-parruccheria{
+	font-size: 16px;
+}
+#descrizione-parruccheria{
+	font-size: 14px;
+	text-align: justify;
+}
