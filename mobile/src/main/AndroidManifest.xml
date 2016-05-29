@@ -33,7 +33,7 @@
 		android:name="com.appcliente.wegest.WebViewAppApplication"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
-		android:theme="@style/Theme.WebViewApp.Blue"
+		android:theme="@style/Theme.WebViewApp.Purple"
 		android:hardwareAccelerated="true"
 		android:allowBackup="true"
 		android:supportsRtl="true">

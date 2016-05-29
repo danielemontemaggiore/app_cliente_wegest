@@ -46,8 +46,8 @@ android
 		// leave these constants empty if you do not want to use push notifications,
 		// see https://documentation.onesignal.com for more info
 		manifestPlaceholders = [manifestApplicationId: "${applicationId}",
-								onesignal_app_id: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-								onesignal_google_project_number: "XXXXXXXXXXXX"]
+								onesignal_app_id: "933c0e60-16fd-43e4-abed-4ab9d545f40a",
+								onesignal_google_project_number: "818990976777"]
 	}
 
 	signingConfigs

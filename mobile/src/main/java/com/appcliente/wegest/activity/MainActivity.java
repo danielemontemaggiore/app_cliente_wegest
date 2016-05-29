@@ -26,6 +26,7 @@ import com.appcliente.wegest.R;
 import com.appcliente.wegest.WebViewAppApplication;
 import com.appcliente.wegest.WebViewAppConfig;
 import com.appcliente.wegest.fragment.MainFragment;
+import com.onesignal.OneSignal;
 
 
 public class MainActivity extends AppCompatActivity
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+
+		OneSignal.startInit(this).init();
 		// handle intent extras
 		Bundle extras = getIntent().getExtras();
 		if(extras != null)
