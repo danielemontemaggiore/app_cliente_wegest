@@ -1,0 +1,29 @@
+.main-content{
+	font-family: 'Neuton', sans-serif;
+line-height: 28px;
+font-weight: 400;
+font-style: normal;
+color: #777;
+text-align: center;
+
+}
+#titolo{
+	height: 100px;
+	background-color: #6caee0;
+	color: white;
+	font-size: 26px;
+	line-height: 100px; 
+    vertical-align: middle;
+	font-style: bold;
+	font-weight: 400;
+}
+
+#descrizione-punti{
+	margin-top: 50px;
+	font-size: 16px;
+}
+
+#punti{
+	color: blue;
+	font-size: 20px;
+}
