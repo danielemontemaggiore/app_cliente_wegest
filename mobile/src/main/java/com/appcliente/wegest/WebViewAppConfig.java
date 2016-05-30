@@ -22,10 +22,10 @@ public class WebViewAppConfig
 	public static final boolean NAVIGATION_DRAWER_ICON_TINT = true;
 
 	// true for enabling pull-to-refresh gesture
-	public static final boolean PULL_TO_REFRESH = true;
+	public static final boolean PULL_TO_REFRESH = false;
 
 	// true for enabling geolocation
-	public static final boolean GEOLOCATION = true;
+	public static final boolean GEOLOCATION = false;
 
 	// tracking id for Google Analytics,
 	// leave this constant empty if you do not want to use Google Analytics

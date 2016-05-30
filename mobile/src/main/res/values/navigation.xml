@@ -8,11 +8,11 @@
 	<!-- List of titles in navigation drawer menu -->
 	<string-array name="navigation_title_list">
 		<item>Menu</item>
-		<item>Home</item>
-		<item>Our Products</item>
-		<item>References</item>
-		<item>Support</item>
-		<item>Info</item>
+		<item>La Parruccheria</item>
+		<item>Ultimi tagli</item>
+		<item>Prenota</item>
+		<item>Verifica punti</item>
+		<item>Dove siamo</item>
 		<item>About Us</item>
 		<item>Contact</item>
 	</string-array>
@@ -28,7 +28,7 @@
 		<item>file:///android_asset/home.html</item>
 		<item>file:///android_asset/galleria.html</item>
 		<item>file:///android_asset/prenotazione.html</item>
-		<item>http://mock.robotemplates.com/webviewapp/support.html</item>
+		<item>file:///android_asset/saldopunti.html</item>
 		<item></item>
 		<item>http://mock.robotemplates.com/webviewapp/about.html</item>
 		<item>file:///android_asset/contact.html</item>
