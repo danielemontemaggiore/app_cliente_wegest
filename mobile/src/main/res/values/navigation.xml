@@ -9,12 +9,11 @@
 	<string-array name="navigation_title_list">
 		<item>Menu</item>
 		<item>La Parruccheria</item>
-		<item>Ultimi tagli</item>
+		<item>News</item>
 		<item>Prenota</item>
 		<item>Verifica punti</item>
 		<item>Dove siamo</item>
-		<item>About Us</item>
-		<item>Contact</item>
+		<item>Contatti</item>
 	</string-array>
 
 	<!--
@@ -26,12 +25,11 @@
 	<string-array name="navigation_url_list">
 		<item></item>
 		<item>file:///android_asset/home.html</item>
-		<item>file:///android_asset/galleria.html</item>
+		<item>https://www.facebook.com/Parruccheria-Salvo-Bramonte-819636291391849/?fref=ts</item>
 		<item>file:///android_asset/prenotazione.html</item>
 		<item>file:///android_asset/saldopunti.html</item>
 		<item></item>
-		<item>http://mock.robotemplates.com/webviewapp/about.html</item>
-		<item>file:///android_asset/contact.html</item>
+		<item>file:///android_asset/info.html</item>
 	</string-array>
 
 	<!-- List of icons in navigation drawer menu -->
@@ -42,7 +40,6 @@
 		<item>@drawable/ic_navigation_references</item>
 		<item>@drawable/ic_navigation_support</item>
 		<item></item>
-		<item>@drawable/ic_navigation_about</item>
 		<item>@drawable/ic_navigation_contact</item>
 	</string-array>
 
