@@ -12,7 +12,12 @@
 	<link rel="stylesheet" href="css/demo.css">
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/form-labels-on-top.css">
-
+	<link rel="stylesheet" href="css/saldopunti.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="send_form.js"></script>
 </head>
 
 <!--
@@ -24,7 +29,7 @@
 
         <!-- You only need this form and the form-labels-on-top.css -->
 
-        <form class="form-labels-on-top" method="post" action="http://appalermo.altervista.org/decodejson.php">
+        <form class="form-labels-on-top" name="modulo" id="form_prenotazione">
 
             <div class="form-title-row">
                 <h1>Visualizza saldo punti</h1>
@@ -35,22 +40,30 @@
 			<img src="img/card.png" alt="Immagine salone" />
 			
 			<br><br>
-			Inserisci il codice presente sotto il codice a barre
+			<div id="scritta">
+					Inserisci il codice presente sotto il codice a barre
+				
+				<div class="form-row">
+					<label>
+						<span>Codice a barre</span>
+						<input type="text" name="bar_code" id="bar_code">
+					</label>
+				</div>
 
-            <div class="form-row">
-                <label>
-                    <span>Codice a barre</span>
-                    <input type="text" name="name">
-                </label>
-            </div>
-
-            
-            <div class="form-row">
-                <button type="submit">Invia Richiesta</button>
-            </div>
-
+				<input type='hidden' name="id_punto" id="id_punto" value="1" />
+				
+				<div class="form-row">
+					<button type="button" id="invia_richiesta">Invia Richiesta</button>
+				</div>
+				
+				</div>
+			
+			<div id="risultato">
+							
+			</div>
         </form>
-
+		
+		
     </div>
 
 </body>
