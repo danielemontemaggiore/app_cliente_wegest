@@ -11,7 +11,6 @@ $(document).ready(function() {
       {
 		  var elem = document.getElementById("scritta");
 			elem.parentNode.removeChild(elem);
-        //var json = '{"Risposta": "Ok","ID_cliente": "24545","Cognome": "Za","Nome": "Peppina","Premi": [{"Premio": "Ceretta","Punti": "50"},{"Premio": "Taglio","Punti": "80"}]}';
 			var json = msg;
 			var jsonData = JSON.parse(json);
 			
@@ -20,8 +19,7 @@ $(document).ready(function() {
 			
 			var cognome = jsonData.Cognome;
 			var nome = jsonData.Nome;
-			//alert ("Risposta: " + risposta + ". Benvenuta "+ cognome + " " + nome);
-			$("#risultato").append('<div id="descrizione-punti"> Benvenuta '+ cognome + " " + nome +"<br>Lista dei premi disponibili : <br><br><br></div>");
+			$("#risultato").append('<div id="descrizione-punti"> Benvenuta <b>'+ cognome + " " + nome +"</b><br>Di seguito trova la lista dei premi disponibili : <br><br><br></div>");
 			$("#risultato").append('<table class="table"><thead><tr><th class="name">Premio</th><th class="points">Punti</th></tr></thead><tbody>');
 			for (var i = 0; i < jsonData.Premi.length; i++) {
 				var tipo_premio = jsonData.Premi[i];
