@@ -24,7 +24,7 @@
 
         <!-- You only need this form and the form-labels-on-top.css -->
 
-        <form class="form-labels-on-top" method="post" action="http://appalermo.altervista.org/decodejson.php">
+        <form class="form-labels-on-top" method="post" action="http://we-gest.com/accesso_barcode.asp">
 
             <div class="form-title-row">
                 <h1>Visualizza saldo punti</h1>
@@ -40,11 +40,12 @@
             <div class="form-row">
                 <label>
                     <span>Codice a barre</span>
-                    <input type="text" name="name">
+                    <input type="text" name="bar_code">
                 </label>
             </div>
 
-            
+            <input type='hidden' name="id_punto" value="1" />
+
             <div class="form-row">
                 <button type="submit">Invia Richiesta</button>
             </div>

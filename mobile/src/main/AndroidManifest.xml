@@ -3,7 +3,8 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	package="com.appcliente.wegest"
-	android:installLocation="auto">
+	android:installLocation="auto"
+	>
 	
 	<!-- versionCode, versionName, minSdkVersion, targetSdkVersion properties are set via Gradle script -->
 	

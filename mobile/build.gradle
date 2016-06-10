@@ -39,15 +39,15 @@ android
 		applicationId "com.appcliente.wegest"
 		minSdkVersion 15
 		targetSdkVersion 23
-		versionCode VERSION_MAJOR*10000000 + VERSION_MINOR*100000 + VERSION_PATCH*1000 + VERSION_BUILD
-		versionName "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}"
+		versionCode 20100001
+		versionName "2.0"
 
 		// app id and Google project number for OneSignal push notifications,
 		// leave these constants empty if you do not want to use push notifications,
 		// see https://documentation.onesignal.com for more info
 		manifestPlaceholders = [manifestApplicationId: "${applicationId}",
-								onesignal_app_id: "933c0e60-16fd-43e4-abed-4ab9d545f40a",
-								onesignal_google_project_number: "818990976777"]
+								onesignal_app_id: "8c02d167-9faa-4480-92d5-022407d08cb0",
+								onesignal_google_project_number: "1029320593831"]
 	}
 
 	signingConfigs
