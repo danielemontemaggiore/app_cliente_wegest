@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>Chi Siamo</title>
-
 	<link rel="stylesheet" href="css/info.css">
-
+	<style>
+		html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		}
+		#map {
+		height: 100%;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	</style>
 </head>
-
-
-    <div class="main-content">
-		<div id="over" >
-			<img src="img/screen.png" height="50%" width="50%">
-		</div>
-		<hr>
-		<div class="center"><b>Orari di apertura</b>
+<body>
+<div class="main-content">
+	<div id="over">
+		<img src="img/screen.png" height="100%" width="25% ">
+	</div>
+	<hr>
+	<div class="center"><b>Orari di apertura</b>
 		<br>
-		Da Martedì a Sabato 9.00 - 18.00
+		Da Marted&iacute; a Sabato 9.00 - 18.00
 		<br>
-		</div>
-		<hr>
-		<br><br>
-		<div class="center">
+	</div>
+	<hr>
+	<br><br>
+
+</div>
+<div id="over">
+	<div id="map"></div>
+</div>
+<div class="main-content">
+	<div class="center">
 		<b>Indirizzo:</b> Viale strasburgo 15, Palermo
 		<br>
-		<b>Telefono</b>  +39 3208965745 
+		<b>Telefono</b>  +39 3208965745
 		<br>
-		<b>Sito web:</b>  <a href="http://www.maisonmami.it/">Hair & Hair</a> 
+		<b>Sito web:</b>  <a href="http://www.maisonmami.it/">Hair & Hair</a>
 		<br>
-		</div>
-		
-       
+	</div>
+</div>
+</div>
+<script>
 
-    </div>
+      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+      // Australia.
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: {lat: 38.149099, lng: 13.332970}
+        });
 
+        var image = 'icon.png';
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 38.149099, lng: 13.332970},
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCwg9XDM_4HDDFUXaI_eWPHudZMEPub7_Y &callback=initMap">
+</script>
 </body>
-
 </html>

@@ -21,9 +21,29 @@ text-align: center;
 #descrizione-punti{
 	margin-top: 50px;
 	font-size: 16px;
+	text-align: left;
+	font-weight: 300;
 }
-
+tr.table_content{
+	font-size: 14px;
+	text-align: left;
+	font-weight: 200;
+	line-height: 1.42857143;
+}
+tr.table_content2{
+	font-size: 14px;
+	text-align: left;
+	font-weight: 200;
+	line-height: 1.42857143;
+	background-color: #d9edf7;
+}
 #punti{
 	color: blue;
 	font-size: 20px;
+}
+.name{
+	width: 91%;
+}
+.points{
+	width: 10%;
 }
