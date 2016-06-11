@@ -19,7 +19,8 @@ $(document).ready(function() {
 			
 			var cognome = jsonData.Cognome;
 			var nome = jsonData.Nome;
-			$("#risultato").append('<div id="descrizione-punti"> Benvenuta <b>'+ cognome + " " + nome +"</b><br>Di seguito trova la lista dei premi disponibili : <br><br><br></div>");
+			var punti_disponibili = jsonData.Punti;
+			$("#risultato").append('<div id="descrizione-punti"> Benvenuta <b>'+ cognome + " " + nome +"</b><br>Lei ha totalizzato <b>"+ punti_disponibili +"</b> punti.<br> Di seguito trova la lista dei premi disponibili : <br><br><br></div>");
 			$("#risultato").append('<table class="table"><thead><tr><th class="name">Premio</th><th class="points">Punti</th></tr></thead><tbody>');
 			for (var i = 0; i < jsonData.Premi.length; i++) {
 				var tipo_premio = jsonData.Premi[i];
