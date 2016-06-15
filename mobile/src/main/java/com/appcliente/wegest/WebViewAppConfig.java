@@ -29,21 +29,21 @@ public class WebViewAppConfig
 
 	// tracking id for Google Analytics,
 	// leave this constant empty if you do not want to use Google Analytics
-	public static final String ANALYTICS_TRACKING_ID = "UA-XXXXXXXX-X";
+	public static final String ANALYTICS_TRACKING_ID = "";
 
 	// unit ids for AdMob,
 	// leave these constants empty if you do not want to use AdMob
-	public static final String ADMOB_UNIT_ID_BANNER = "ca-app-pub-XXXXXXXXXXXXXXXXXXXXXXXXXXX";
-	public static final String ADMOB_UNIT_ID_INTERSTITIAL = "ca-app-pub-XXXXXXXXXXXXXXXXXXXXXXXXXXX";
+	public static final String ADMOB_UNIT_ID_BANNER = "";
+	public static final String ADMOB_UNIT_ID_INTERSTITIAL = "";
 
 	// test device id for AdMob,
 	// setup this constant if you want to avoid invalid impressions,
 	// you can find your hashed device id in the logcat output by requesting an ad when debugging on your device
-	public static final String ADMOB_TEST_DEVICE_ID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+	public static final String ADMOB_TEST_DEVICE_ID = "";
 
 	// frequency of showing AdMob interstitial ad,
 	// ad will be shown after each x clicks on navigation drawer menu
-	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 10;
+	public static final int ADMOB_INTERSTITIAL_FREQUENCY = 0;
 
 	// true for opening webview links in external web browser rather than directly in the webview
 	public static final boolean OPEN_LINKS_IN_EXTERNAL_BROWSER = false;
