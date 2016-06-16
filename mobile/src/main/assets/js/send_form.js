@@ -18,9 +18,7 @@ $(document).ready(function() {
 
 			var messaggio_errore = "Errore";
 
-			$("#risultato").append(risposta);
-
-			if (risposta.localeCompare(messaggio_errore)==-1) {
+			if (risposta.localeCompare(messaggio_errore)==0) {
                 $("#risultato").append('Il codice a barre da lei inserito è errato.<br>Per visualizzare il suo saldo punti, torni alla schermata precedente e inserisca nuovamente il codice a barre.');
             }
 			else
@@ -45,8 +43,6 @@ $(document).ready(function() {
       error: function()
       {
 		  alert("Errore");
-		
-			
       }
     });
   });
