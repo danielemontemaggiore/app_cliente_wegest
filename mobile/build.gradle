@@ -39,8 +39,8 @@ android
 		applicationId "com.appcliente.wegest"
 		minSdkVersion 15
 		targetSdkVersion 23
-		versionCode 20100004
-		versionName "2.3"
+		versionCode 20100006
+		versionName "2.5"
 
 		// app id and Google project number for OneSignal push notifications,
 		// leave these constants empty if you do not want to use push notifications,

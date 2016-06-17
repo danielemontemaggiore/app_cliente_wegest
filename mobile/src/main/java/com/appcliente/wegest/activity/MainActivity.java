@@ -18,6 +18,8 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -64,6 +66,8 @@ public class MainActivity extends AppCompatActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+
 
 
 		OneSignal.startInit(this).init();
@@ -443,7 +447,7 @@ public class MainActivity extends AppCompatActivity
 			// header background
 			if(WebViewAppConfig.NAVIGATION_DRAWER_HEADER_IMAGE)
 			{
-				headerView.setBackgroundResource(R.drawable.navigation_header_bg);
+				//headerView.setBackgroundResource(R.drawable.navigation_header_bg);
 			}
 		}
 	}

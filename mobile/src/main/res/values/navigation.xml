@@ -8,7 +8,7 @@
 	<!-- List of titles in navigation drawer menu -->
 	<string-array name="navigation_title_list">
 		<item>Menu</item>
-		<item>La Parruccheria</item>
+		<item>Pam Idea</item>
 		<item>News</item>
 		<item>Prenota</item>
 		<item>Verifica punti</item>
