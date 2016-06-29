@@ -13,16 +13,34 @@
     <link rel="stylesheet" href="css/form-labels-on-top.css">
     <link rel="stylesheet" href="css/stylesheet-pure-css.css">
 
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script type="text/javascript" src="js/jquery.timepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css" />
+
+
+
+    <script>
+	$(function() {
+	  $("#date").datepicker();
+	  $("#date").datepicker("option", "dateFormat", "dd/mm/yy" ) ;
+
+	  $("#hour").timepicker();
+	  $('#timepicker').timepicker({
+        'minTime': '8:00am',
+        'maxTime': '6:30pm',
+	    'interval': '15',
+        'showDuration': false
+      });
+
+	});
+	</script>
+
+
 </head>
 
-<!--
-	<header>
-		<h1></h1>
-    </header>
--->
 <div class="main-content">
-
-    <!-- You only need this form and the form-labels-on-top.css -->
 
     <form class="form-labels-on-top" method="post" action="http://www.i-salon.eu/prenotazione_app.asp">
 
@@ -47,7 +65,7 @@
         <div class="form-row">
             <label>
                 <span>Numero di telefono (*)</span>
-                <input type="text" name="telephone">
+                <input type="tel" name="telephone">
             </label>
         </div>
 
@@ -60,15 +78,16 @@
 
         <div class="form-row">
             <label>
-                <span>Giorno (*)</span>
-                <input type="number" name="day">
+                <span>Giorno</span>
+                <input type="text" id="date" />
             </label>
         </div>
 
         <div class="form-row">
             <label>
-                <span>Ora (*)</span>
-                <input type="number" name="hour">
+                <span>Ora</span>
+
+                <input autocomplete="off" id="hour" class="time ui-timepicker-input" type="text"></input>
             </label>
         </div>
 
@@ -78,11 +97,11 @@
             <label>
                 <span>Servizi richiesti : </span>
                 <br><br>
-                <input id="radio1" type="radio" name="servizio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Taglio</label><br>
-                <input id="radio2" type="radio" name="servizio" value="2" ><label for="radio1"><span><span></span></span>Piega</label><br>
-                <input id="radio3" type="radio" name="servizio" value="3" ><label for="radio1"><span><span></span></span>Meches</label><br>
-                <input id="radio4" type="radio" name="servizio" value="4" ><label for="radio1"><span><span></span></span>Manicure</label><br>
-                <input id="radio5" type="radio" name="servizio" value="5" ><label for="radio1"><span><span></span></span>Pedicure</label><br>
+                <input id="radio1" type="radio" name="servizio1" value="1" checked="checked" multiple><label for="radio1"><span><span></span></span>Taglio</label><br>
+                <input id="radio2" type="radio" name="servizio2" value="2" multiple><label for="radio1"><span><span></span></span>Piega</label><br>
+                <input id="radio3" type="radio" name="servizio3" value="3" multiple><label for="radio1"><span><span></span></span>Meches</label><br>
+                <input id="radio4" type="radio" name="servizio4" value="4" multiple><label for="radio1"><span><span></span></span>Manicure</label><br>
+                <input id="radio5" type="radio" name="servizio5" value="5" multiple><label for="radio1"><span><span></span></span>Pedicure</label><br>
             </label>
         </div>
 
